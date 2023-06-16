@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.17/fullpage.min.css" integrity="sha512-JIWkx/Vz4qw2gIbB6CCH0f8TdElaUt22FCIIytW9C792hpBivsgmsBqoIMtlDTbqLI9mCA+PXw4/v6BCRLbtKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/abyssopelagic" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+                           
+    <link href="https://fonts.cdnfonts.com/css/julian-daniel" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    h1{
+    font-family: 'Abyssopelagic', sans-serif;
+                                                  
+    font-size: large; 
+    font-weight: bolder;     
+    font-size: 100px;                                        
+  }
+  button{
+    font-family: 'Montserrat';
+  }
+.section {
+    text-align: center;
+    font-size: 3em;
+}
+/* left-slider-arrow */
+.fp-controlArrow.fp-prev {
+    border: none;
+    width: 50px;
+    height: 101px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* right-slider-arrow */
+  .fp-controlArrow.fp-next {
+    border: none;
+    width: 50px;
+    height: 101px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+#slide1{
+            background-image: url(/images/hotel/hotel5.jpg);
+            background-blend-mode: darken;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: black;
+}
+#slide1 h1 span{
+    font-family: 'Abyssopelagic', sans-serif;
+    font-weight: 800;
+    border: 2px solid white;
+    background-color: #fff;
+}
+#slide2{
+    background-color: #fff;
+}
+ 
+
+.fp-watermark {
+    display: none;
+}
+
+#section3{
+    background-color: #fff !important;
+    font-size: 22px;
+   
+}
+
+
+
+.section {
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+}
+#section-footer{
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+}
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+    </style>
+ <div id="fullpage">
+      
+  <div class="section">
+     <div class="slide" id="slide1">
+      <h1 style="font-size:4vw;">
+        <span> RELISH IN APLOMB  </span>
+      </h1>
+     </div>
+     <div class="slide" id="slide2">
+     
+        <p style="font-size: 2vw; font-family: 'monts';">From its geometrical grandeur to the exquisite splendor <br>
+          of its smallest interior detail, <br>
+           Sky Garden depicts harmoniously integrated spaces and is the ideal setting for creating an oasis <br> 
+           that embraces imagination, innovation, and individuality. <br>
+           Each unit has light-filled living areas <br>
+            with stylish features, premium appliances,<br>
+             and high-quality fittings and finishes throughout, 
+            providing a stunning backdrop to a beautiful life. <br>
+
+          A conference room is essential to any luxury hotel experience,<br>
+          and this concept hotel recognizes the value of
+           offering a refreshing professional escape.  <br>
+           The hotel has an elegant conference center with lush landscaping and  <br>
+           stylish loungers. Take meetings in a tranquil setting.
+          
+            </p>
+     
+     </div>
+     <div class="slide" >
+      <img src="images/hotel/hotel1.jpg" alt="" srcset="">
+     </div>
+     <div class="slide" >
+      <img src="images/hotel/hotel2.jpg" alt="" srcset="">
+     </div>
+     <div class="slide" >
+      <img src="images/hotel/hotel3.jpg" alt="" srcset="">
+     </div>
+     <div class="slide" >
+      <img src="images/hotel/hotel4.jpg" alt="" srcset="">
+     </div>
+     <div class="slide" >
+      <img src="images/hotel/hotel5.jpg" alt="" srcset="">
+     </div>
+     <div class="slide" >
+      <img src="images/hotel/hotel6.jpg" alt="" srcset="">
+     </div>
+     <div class="slide" >
+      <img src="images/hotel/hotel7.jpg" alt="" srcset="">
+     </div>
+     <div class="slide" >
+      <img src="images/hotel/hotel8.jpg" alt="" srcset="">
+     </div>
+     <div class="slide" >
+      <img src="images/hotel/hotel9.jpg" alt="" srcset="">
+     </div>
+     
+    
+    
+
+    </div>
+    
+ 
+  <div class="section" id="section3" >
+      <style media="screen">
+          *,
+          *:before,
+          *:after{
+              padding: 0;
+              margin: 0;
+              box-sizing: border-box;
+              font-family: "Poppins",sans-serif;
+              font-weight: 500;}
+          #section3{
+            height: 100vh;
+            background: #9ac2d4;
+           
+          }
+          .form{
+            background-color: #ffffff;
+              width: 70%;
+              min-width: 420px;
+              padding: 35px 50px;
+              transform: translate(-50%,-50%);
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              border-radius: 10px;
+              box-shadow: 2px 30px 25px rgba(0,0,0,0.15);
+          }
+          #section3 h1{
+            font-size: 30px;
+              text-align: center;
+              color: #1c093c;
+          }
+          #section3 p{
+            position: relative;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            color: #606060;
+            font-size: 14px;
+            font-weight: 400;
+          }
+          form{
+            width: 100%;
+            position: relative;
+            margin: 30px auto 0 auto;
+          }
+          .row{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+            grid-gap: 20px 30px;
+            margin-bottom: 20px;
+          }
+          label{
+            color: #050f24;
+            font-size: 15px;
+          }
+          textarea,
+          input{
+            width: 100%;
+            font-weight: 400;
+            padding: 8px 10px;
+            border-radius: 3px;
+            border: 1.2px solid #8d94ab;
+            margin-top: 5px;
+          }
+          textarea{
+            resize: none;
+          }
+          textarea:focus,
+          input:focus{
+            outline: none;
+            border-color: #0c0b4c;
+          }
+          .form button{
+            border: none;
+          margin-left: 32%;
+            padding: 12px 45px;
+            background: #05559a;
+            color: #ffffff;
+            border-radius: 3px;
+          }
+                      </style>
+                      <div class="form">
+                          <h1>Book Now With Us</h1>
+                          <form>
+                              <div class="row">
+                                  <div class="column">
+                                      <label for="name">Name</label>
+                                      <input type="text" id="name" placeholder="Your name here">
+                                  </div>
+                                  <div class="column">
+                                      <label for="email">Email</label>
+                                      <input type="email" id="email" placeholder="Your email here">
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="column">
+                                      <label for="subject">Subject</label>
+                                      <input type="text" id="subject" placeholder="Your subject here">
+                                  </div>
+                                  <div class="column">
+                                      <label for="contact">Phone Number</label>
+                                      <input type="tel" id="contact" placeholder="Your phone number here">
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="column">
+                                      <label for="issue">Additional Information You Would Like To Add</label>
+                                      <textarea id="issue" placeholder="" rows="3"></textarea>
+                                  </div>
+                              </div>
+                              <button>Submit</button>
+                          </form>
+                      </div>
+     </div>
+     <div class="section" id="section-footer">
+
+      <br><br><br>
+      <div style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=burundi+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+        <a href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a></iframe></div>
+    <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">Sky Garden</h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            5534 Somewhere In. The World 22193-10212<br>
+                
+            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Media</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Online</a>
+              </li>
+      
+              <li>
+                <a href="#">Print</a>
+              </li>
+                  
+              <li>
+                <a href="#">Alternative Ads</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Technology</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="#">Hardware Design</a>
+              </li>
+              
+              <li>
+                <a href="#">Software Design</a>
+              </li>
+              
+              <li>
+                <a href="#">Digital Signage</a>
+              </li>
+              
+              <li>
+                <a href="#">Automation</a>
+              </li>
+              
+              <li>
+                <a href="#">Artificial Intelligence</a>
+              </li>
+              
+              <li>
+                <a href="#">IoT</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2019 Something. All rights reserved.</p>
+          
+          <div class="legal__links">
+            <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+          </div>
+        </div>
+      </footer>
+   </div>    
+  
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.17/fullpage.min.js" integrity="sha512-zAHJKGyoPf2Y20Wi4uo32sa/vSvwKfY4tYUt6gJfmkA79X0wt5ZfaxL5GqJ5cMnmvGslWi5PKTo51rHRZqYbJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+    <script>
+      new fullpage('#fullpage', {
+  //options here
+  autoScrolling:true,
+  scrollHorizontally: true,
+  sectionsColor : ['#fff', '#fff', '#fff', '#fff'],
+  navigation: true,
+  slidesNavigation: true,
+  anchors:['Home', 'Book', 'Map',],
+  navigationTooltips: ['Home', 'Book', 'Map'],
+  afterRender: function () {
+        /** arrow-left */
+        const arrow_left = document.querySelector(".fp-controlArrow.fp-prev");
+        arrow_left.innerHTML = `<i class="fas fa-chevron-left"></i>`;
+        /** arrow-right */
+        const arrow_right = document.querySelector(".fp-controlArrow.fp-next");
+        arrow_right.innerHTML = `<i class="fas fa-chevron-right"></i>`;
+    }
+});
+    </script>
+</body>
+</html>
